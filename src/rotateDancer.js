@@ -10,7 +10,7 @@ RotateDancer.prototype = Object.create(Dancer.prototype);
 
 RotateDancer.prototype.constructor = RotateDancer;
 
-BatmanDancer.prototype.step = function() { 
+RotateDancer.prototype.step = function() { 
   var name = Dancer.prototype.step.bind(this);
   name();
 };

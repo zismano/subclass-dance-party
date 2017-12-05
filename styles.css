@@ -23,6 +23,25 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+
+
+.colorDance {
+  position: relative;
+ -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+ -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+.colorDance:hover
+{
+  transform: translate(7em,0);
+  -webkit-transform: translate(7em,0);
+  -moz-transform: translate(7em,0);
+  -o-transform: translate(7em,0);
+  -ms-transform: translate(7em,0);
+}
+
 .dancer{
 /*  border:10px solid red;
   border-radius:10px;*/
@@ -31,6 +50,8 @@ body, a:link, a:visited, a:active{
 
 .batman{
  position: relative;
+   
+ /*   filter: saturate(800%);*/
 }
 
 
@@ -51,11 +72,16 @@ body, a:link, a:visited, a:active{
  }
 }
 
+.move{
+width: 50px;
+height: 50px;
+border: 1px solid green;
+background-color: gray;
+text-align: center;
+position: relative;
+
+}
 /*.shy{
   width: 50px;
   height: 50px;
 }*/
-
-.shy{
-
-}

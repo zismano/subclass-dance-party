@@ -31,17 +31,13 @@ $(document).ready(function() {
     $('body').append(dancer.$node);
   });
 
-  $('button').on('click', function(event) {
+  $('.lineup').on('click', function(event) {
  //   debugger;
     Dancer.prototype.lineUp(); 
   });
-  $('.shy').mouseenter(function () {
-    $(this).animate({
-      top: Math.random() < 0.5 ? -1 : 1
-    }, 100);
-    $(this).animate({
-      left: Math.random() < 0.5 ? -1 : 1
-    }, 100);
+
+  $('.pairup').on('click', function(event) {
+    Dancer.prototype.pairUp();
   });
 });
 

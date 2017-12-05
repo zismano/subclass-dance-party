@@ -1,8 +1,10 @@
 var BatmanDancer = function(top, left, timeBetweenSteps) { 
- // this.$node = $('<img id="batman" src=src/batman.png /></img>'); 
- // this.setPosition(top, left);
- // this.$node.css({top: top, left: left});
-  Dancer.apply(this, arguments);
+//this.$node = $('<img id="batman" src=src/batman.png /></img>');
+	this.name = "batman"; 
+	this.$node = $('<img class="batman" src=src/batman.png /></img>'); 
+  	Dancer.apply(this, arguments);
+
+
   this.step();
 };
 

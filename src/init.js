@@ -1,5 +1,6 @@
 $(document).ready(function() {
   window.dancers = [];
+  $('body').css('background', "src/the-real-gotham-city.jpg")
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -60,7 +61,7 @@ $(document).ready(function() {
   });
 
   $('button').on('click', function(event) {
-    debugger;
+ //   debugger;
     Dancer.prototype.lineUp(); 
  });
 });

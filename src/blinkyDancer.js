@@ -9,7 +9,8 @@
 //   }
 
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
-this.$node = $('<span class="dancer"></span>'); 
+  this.$node = $('<span class="dancer"></span>'); 
+  this.$node.append($('<img class="batman" src=src/batman.png /></img>'));
   Dancer.apply(this, arguments);
   this.step();
 };

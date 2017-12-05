@@ -19,7 +19,6 @@
 
 var Dancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
-//this.$node = $('<span class="dancer"></span>');
   this.setPosition(top, left);
   window.dancers.push([this, top, left]);
 };
@@ -44,7 +43,7 @@ Dancer.prototype.lineUp = function() {
   window.dancers.forEach(function(dancer) {
  //   debugger;
   //  dancer.css(top, 100);
-  dancer[0].setPosition(100, dancer[2]);
-
+ // dancer[0].setPosition(500, dancer[2]);
+  dancer[0].$node.toggleClass('line');
   });
 };

@@ -1,7 +1,8 @@
 var BlinkyDancer = function(top, left, timeBetweenSteps) { 
-  Dancer.apply(this, arguments);  
-  // this.oldStep = this.step;  
-  // this.oldStep();
+  this.oldStep = Dancer.prototype.step; 
+ // this.oldStep();
+  Dancer.apply(this, arguments);
+
 };
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
@@ -10,6 +11,7 @@ BlinkyDancer.prototype.constructor = BlinkyDancer;
 
 BlinkyDancer.prototype.step = function() {
   this.oldStep();
+  // this.$oldNode.toggle();
   this.$node.toggle();
 };
 
@@ -27,6 +29,7 @@ BlinkyDancer.prototype.step = function() {
 //     // it just schedules the next step
 //     setTimeout(dancer.step, timeBetweenSteps);
 //   };
+
 //   blinkyDancer.step = function() {
 //     // call the old version of step at the beginning of any call to this new version of step
 //     oldStep();

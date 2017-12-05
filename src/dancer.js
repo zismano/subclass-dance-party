@@ -2,6 +2,7 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
   this.$node = $('<span class="dancer"></span>');
   this.setPosition(top, left);
+  window.dancers.push([this, top, left]);
 };
 
 // the basic dancer doesn't do anything interesting at all on each step,
@@ -18,4 +19,12 @@ Dancer.prototype.setPosition = function(top, left) {
     left: left
   };  
   this.$node.css(styleSettings);
+};
+
+Dancer.prototype.lineUp = function() {
+  window.dancers.forEach(function(dancer) {
+ //   debugger;
+  //  dancer.css(top, 100);
+  dancer.prototype.setPosition(100, dancer[2]);
+  });
 };

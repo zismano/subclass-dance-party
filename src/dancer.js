@@ -1,6 +1,9 @@
 var Dancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
   this.setPosition(top, left);
+  if (window.dancers === undefined) {
+    window.dancers = [];
+  }
   window.dancers.push([this, top, left]);
 };
 

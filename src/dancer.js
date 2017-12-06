@@ -1,22 +1,3 @@
-// var Dancer = class Dancer {
-//   constructor(top, left, timeBetweenSteps) {
-//     this.$node = $('<span class="dancer"></span>');
-//  // this.$node = $('<img id="batman" src=src/batman.png /></img>');
-//     this.step();
-//     this.setPosition(top, left);
-//   }
-//   step() {
-//     setTimeout(this.step.bind(this), this.timeBetweenSteps);
-//   }
-//   setPosition(top, left) {
-//     let styleSettings = {
-//       top: top,
-//       left: left
-//     };  
-//     this.$node.css(styleSettings);  
-//   }
-
-
 var Dancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
   this.setPosition(top, left);
@@ -56,7 +37,6 @@ Dancer.prototype.pairUp = function() {
     }  
   } else {
     for (var i = 0; i < window.dancers.length; i = i + 2) {
-    //  debugger;
       var randomSaturation = ((Math.random() * 800));
       var randomColor = getRandomColor();
       var pairColor = {
@@ -69,17 +49,6 @@ Dancer.prototype.pairUp = function() {
         window.dancers[i + 1][0].$node.css(pairColor); 
       }
     }  
-  }
-
-};
-
-Dancer.prototype.splitUp = function() {
-  for (var i = 0; i < window.dancers.length; i++) {
-    var clean = {
-      filter: '',
-      'background-color': '' 
-    };
-    window.dancers[i][0].$node.css(clean);
   }
 
 };

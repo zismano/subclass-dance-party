@@ -2,38 +2,39 @@ body, html{
   height:100%;
   background: url("src/286702-Batman-artwork-concept_art-Gotham_City-DC_Comics-superhero-skyscraper.jpg") no-repeat center center fixed;
   background-size: cover;
-
 }
+
 body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
 }
+
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
+
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
 }
+
 .topbar{
   height:32px;
   background-color: #555;
 }
+
 .title{
   background-color: #777;
 }
 
-
-.colorDance {
+.shyDance {
   position: relative;
- -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
- -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   animation-name: example;
   animation-duration: 4s;
 }
 
-.colorDance:hover
+.shyDance:hover
 {
   transform: translate(7em,0);
   -webkit-transform: translate(7em,0);
@@ -43,17 +44,12 @@ body, a:link, a:visited, a:active{
 }
 
 .dancer{
-/*  border:10px solid red;
-  border-radius:10px;*/
-  position:absolute;
+  position: absolute;
 }
 
 .batman{
  position: relative;
-   
- /*   filter: saturate(800%);*/
 }
-
 
 .line{
  top: 50% !important;
@@ -63,6 +59,7 @@ body, a:link, a:visited, a:active{
 .rotate{
  -webkit-animation: rotation 2s infinite linear;
 }
+
 @-webkit-keyframes rotation {
  from {
    -webkit-transform: rotate(0deg);
@@ -71,17 +68,3 @@ body, a:link, a:visited, a:active{
    -webkit-transform: rotate(359deg);
  }
 }
-
-.move{
-width: 50px;
-height: 50px;
-border: 1px solid green;
-background-color: gray;
-text-align: center;
-position: relative;
-
-}
-/*.shy{
-  width: 50px;
-  height: 50px;
-}*/
